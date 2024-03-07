@@ -1,0 +1,5 @@
+ export GOOGLE_APPLICATION_CREDENTIALS="./keys/gcp-servic-acc-key.json"
+
+terraform init
+terraform plan
+terraform destroy
