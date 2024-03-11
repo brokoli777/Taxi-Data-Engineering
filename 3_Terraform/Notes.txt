@@ -3,6 +3,7 @@ export GOOGLE_APPLICATION_CREDENTIALS="./keys/gcp-servic-acc-key.json"
 terraform fmt
 terraform init
 terraform plan
+terraform apply
 terraform destroy
 
 # added variables to make it easier to configure, 

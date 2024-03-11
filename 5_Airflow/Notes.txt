@@ -1,0 +1,9 @@
+mkdir -p ./dags ./logs ./plugins
+echo -e "AIRFLOW_UID=$(id -u)" > .env
+
+curl -LfO 'https://airflow.apache.org/docs/apache-airflow/stable/docker-compose.yaml'
+
+docker build . \
+  --pull \
+  --build-arg BASE_AIRFLOW_IMAGE="apache/airflow:2.0.2" \
+  --tag my-airflow-image:0.0.1
